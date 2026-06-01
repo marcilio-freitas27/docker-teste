@@ -2,11 +2,11 @@ FROM node:20
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY vue-project/package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY vue-project/ .
 
 EXPOSE 5173
 
