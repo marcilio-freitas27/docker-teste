@@ -1,7 +1,7 @@
 #### Comandos docker
 
 - Iniciar todos os containers:
-    - levando em consideração que os arquivos docker(docker-compoese.yml e Dockerfile) estão configurados, execute:
+    - levando em consideração que os arquivos docker(docker-compose.yml e Dockerfile) estão configurados, execute:
         - ```cmd 
                 $ docker compose up
           ```
@@ -12,3 +12,9 @@
             Ex.: 
             $ docker container exec -it 759d1c3b9765 bash
       ```
+
+- Fazer o build do frontend
+    - ```cmd
+            $ docker compose run --build --rm --no-deps frontend npm run build
+      ```
+
